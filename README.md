@@ -1,57 +1,83 @@
-<header>
+# Hexo Theme Lagom
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+`Lagom` is a word comes from Sweden, means `no more, no less`.
 
-# GitHub Pages
+It's a modern thinking about every aspects of life.
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+`Simplicity` and `Contentment` are the keywords of lagom's philosophy.
 
-</header>
+This is also my ideal philosophy of life.
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
+This idea exactly matches the design sense of `MUJI`, which can depict an elegant world with black and white. Inspired by the desgin of `MUJI`, I think this theme only needs black an wihte.
 
-## Finish
+## Demo
 
-_Congratulations friend, you've completed this course!_
+[![Lagom screenshot](https://github.com/jylzs369/hexo-theme-lagom/blob/master/source/images/lagom-screenshot.png)](https://shiolife.cn/lagom/)
 
-<img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
+## feature
 
-Your blog is now live and has been deployed!
+- Simplicity
+- Responsive
+- valine integration
+- I18n support
+- Custom iconfont
 
-Here's a recap of all the tasks you've accomplished in your repository:
+## Install
 
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
-- You created your first blog post with Jekyll!
+Clone repo
+```
+git clone https://github.com/jylzs369/hexo-theme-lagom.git
+```
 
-### What's next?
+Change the theme property in the `_config.yml` file
+```
+theme: lagom
+```
 
-- Keep working on your GitHub Pages site... we love seeing what you come up with!
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+initial pages, such as `about`, `categoris`, `tags`
+```
+hexo new page about
+...
+```
 
-<footer>
+## Configuration
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+### menu
+```
+  home: /
+  archives: /archives/
+  categories: /categories/
+  tags: /tags/
+  about: /about/
+```
 
----
+### social links
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+```
+social_links:
+  github:
+    link: ''
+    icon: ''
+  mail:
+    link: ''
+    icon: ''
+  rss:
+    link: ''
+    icon: ''
+```
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+### comment
 
-</footer>
+```
+valine:
+ appid: ''  #Leancloud appId
+ appkey: '' #Leancloud appKey
+ placeholder: ''
+ visitor: true
+```
+
+See the [_config.yml](./_config.yml) file for more configurations.
+
+## License
+
+MIT
