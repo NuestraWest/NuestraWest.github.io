@@ -33,7 +33,7 @@ social_links:
 #   - sort_updated: 是否按更新时间排序/否则通过创建时间排序
 index:
   show_all_posts: false
-  post_count: 3
+  post_count: 5
   sort_updated: false
 
 # 配置归档模板 ARCHIVE TEMPLATE
@@ -46,13 +46,13 @@ archive:
 # 选项:
 #   - show_updated: 展示修改时间
 post:
-  show_updated: false
+  show_updated: true
 
 # 配置版权 COPYRIGHT
 # end_year未设置则默认设置当前年份
 copyright:
   start_year: 2020
-  end_year:
+  end_year: 2025
 
 ##################################################
 # 外观 APPEARANCE
